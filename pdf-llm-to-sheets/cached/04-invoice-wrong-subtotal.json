@@ -1,0 +1,16 @@
+{
+ "doc_type": "invoice",
+ "issuer": "大沼精密加工 株式会社",
+ "date": "2026-09-30",
+ "currency": "JPY",
+ "registration_no": "T9876543210987",
+ "subtotal": 68900,
+ "tax": 6890,
+ "total": 75790,
+ "items": [
+  {"description": "アクリル板 切削加工(図面A)", "qty": 6, "unit_price": 7800, "amount": 46800},
+  {"description": "アルミ治具 製作", "qty": 1, "unit_price": 24500, "amount": 24500},
+  {"description": "表面研磨 追加工", "qty": 3, "unit_price": 5200, "amount": 15600}
+ ],
+ "notes": "請求番号 2026-0931。お支払期限 2026-10-31。振込先 道南しんきん 本店 普通 1234567。"
+}

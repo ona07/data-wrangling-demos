@@ -1,0 +1,65 @@
+{
+  "name": "PDF receipts to Google Sheets",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "a1f0c2d4-0001-4000-8000-000000000001",
+      "name": "When clicking 'Execute workflow'",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [-40, 0]
+    },
+    {
+      "parameters": {
+        "command": "cd /path/to/pdf-llm-to-sheets && python extract.py inbox/*.pdf -o out/expenses.xlsx"
+      },
+      "id": "a1f0c2d4-0002-4000-8000-000000000002",
+      "name": "Extract fields with Claude",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [200, 0]
+    },
+    {
+      "parameters": {
+        "filePath": "/path/to/pdf-llm-to-sheets/out/expenses.json",
+        "options": {}
+      },
+      "id": "a1f0c2d4-0003-4000-8000-000000000003",
+      "name": "Read result file",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [440, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = JSON.parse(items[0].binary.data ? Buffer.from(items[0].binary.data.data, 'base64').toString() : items[0].json.data);\nreturn rows.map(r => ({ json: {\n  file: r.file,\n  date: r.data.date,\n  issuer: r.data.issuer,\n  currency: r.data.currency,\n  total: r.data.total,\n  check: r.problems.length ? ('要確認: ' + r.problems.join(' / ')) : 'OK'\n}}));"
+      },
+      "id": "a1f0c2d4-0004-4000-8000-000000000004",
+      "name": "One row per paper",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [680, 0]
+    },
+    {
+      "parameters": {
+        "operation": "append",
+        "documentId": "PUT-YOUR-SPREADSHEET-ID-HERE",
+        "sheetName": "一覧",
+        "options": {}
+      },
+      "id": "a1f0c2d4-0005-4000-8000-000000000005",
+      "name": "Append to Google Sheets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4,
+      "position": [920, 0]
+    }
+  ],
+  "connections": {
+    "When clicking 'Execute workflow'": {"main": [[{"node": "Extract fields with Claude", "type": "main", "index": 0}]]},
+    "Extract fields with Claude": {"main": [[{"node": "Read result file", "type": "main", "index": 0}]]},
+    "Read result file": {"main": [[{"node": "One row per paper", "type": "main", "index": 0}]]},
+    "One row per paper": {"main": [[{"node": "Append to Google Sheets", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "pinData": {}
+}

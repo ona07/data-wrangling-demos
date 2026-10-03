@@ -1,0 +1,17 @@
+{
+ "doc_type": "expense_report",
+ "issuer": "小久保 直人",
+ "date": "2026-10-02",
+ "currency": "JPY",
+ "registration_no": null,
+ "subtotal": null,
+ "tax": null,
+ "total": 30570,
+ "items": [
+  {"description": "函館→札幌 特急往復(研究打合せ)", "qty": null, "unit_price": null, "amount": 11240},
+  {"description": "宿泊費 1泊(札幌)", "qty": null, "unit_price": null, "amount": 8600},
+  {"description": "部品代 立替(マイクロポンプ継手)", "qty": null, "unit_price": null, "amount": 4730},
+  {"description": "学会参加費", "qty": null, "unit_price": null, "amount": 6000}
+ ],
+ "notes": "立替精算書のため支払先は立替者本人。対象期間 2026-09-01〜2026-09-30。消費税は内税で、税額の内訳は書かれていない。承認欄は未記入。"
+}

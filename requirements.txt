@@ -4,3 +4,5 @@ playwright>=1.47
 pandas>=2.2
 rapidfuzz>=3.9
 reportlab>=4.2
+anthropic>=0.40
+gspread>=6.1

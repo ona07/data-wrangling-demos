@@ -1,0 +1,5 @@
+ファイル	種類	日付	支払先	通貨	小計	税	合計	登録番号	明細数	検算	備考
+01-convenience-receipt.pdf	receipt	2026-09-28	ファミリーストア 函館五稜郭店	JPY	4218	422	4640	T1234567890123	4	OK	レシートNo. 0431-02。現金 5,000 円でお釣り 360 円。行ごとの金額は印字されていない。
+02-expense-form.pdf	expense_report	2026-10-02	小久保 直人	JPY			30570		4	OK	立替精算書のため支払先は立替者本人。対象期間 2026-09-01〜2026-09-30。消費税は内税で、税額の内訳は書かれていない。承認欄は未記入。
+03-invoice-en.pdf	invoice	2026-10-01	Northline Instruments Ltd.	USD	1261.0	0.0	1261.0	GB123456789	3	OK	Invoice No. NL-2026-4417. Due 2026-10-31 (net 30). VAT zero-rated as goods are exported outside the UK.
+04-invoice-wrong-subtotal.pdf	invoice	2026-09-30	大沼精密加工 株式会社	JPY	68900	6890	75790	T9876543210987	3	要確認: 明細の合計 86,900 と小計 68,900 が違う	請求番号 2026-0931。お支払期限 2026-10-31。振込先 道南しんきん 本店 普通 1234567。

@@ -1,0 +1,16 @@
+{
+ "doc_type": "invoice",
+ "issuer": "Northline Instruments Ltd.",
+ "date": "2026-10-01",
+ "currency": "USD",
+ "registration_no": "GB123456789",
+ "subtotal": 1261.0,
+ "tax": 0.0,
+ "total": 1261.0,
+ "items": [
+  {"description": "Piezo transducer PZT-8, 2.0 MHz", "qty": 4, "unit_price": 185.0, "amount": 740.0},
+  {"description": "Acrylic microfluidic chip, custom", "qty": 10, "unit_price": 42.5, "amount": 425.0},
+  {"description": "Shipping (DHL Express)", "qty": 1, "unit_price": 96.0, "amount": 96.0}
+ ],
+ "notes": "Invoice No. NL-2026-4417. Due 2026-10-31 (net 30). VAT zero-rated as goods are exported outside the UK."
+}

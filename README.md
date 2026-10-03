@@ -11,6 +11,7 @@ All sample data is generated and fictional; the one website involved publishes i
 | [invoices-to-excel](invoices-to-excel/) | "Turn this month's supplier invoice PDFs into one spreadsheet" | Python, pdfplumber, openpyxl |
 | [scrape-books-to-csv](scrape-books-to-csv/) | "Get every product from this site, including fields only on the detail page" | Python, Playwright |
 | [dedupe-contacts](dedupe-contacts/) | "Clean this merged contact list before it goes into our CRM" | Python, rapidfuzz, pandas |
+| [pdf-llm-to-sheets](pdf-llm-to-sheets/) | "These receipts and invoices are in a dozen different layouts — get them into one sheet I can trust" | Python, pdfplumber, Claude + JSON schema, openpyxl |
 
 ## How I work
 
@@ -18,6 +19,7 @@ All sample data is generated and fictional; the one website involved publishes i
 - **A free sample first.** For a new client I run the first ~20 rows and send the result within 24 hours, so you see the quality before money moves.
 - **You get something you can re-run.** Script + a README with the exact command + a screenshot or recording of it running. Not a one-off file you have to come back to me for.
 - **Nothing fails quietly.** Totals that don't reconcile, rows that look wrong, pages that changed shape — these are flagged in the output, not swallowed.
+- **I use a model only when rules can't win.** Same layout every month: coordinates and regexes, free and identical every run. Layouts all over the place: an LLM, plus a verification layer that re-checks every number against the paper.
 - **I say no to the wrong jobs.** Sites that forbid automated collection, or work that needs credentials I shouldn't have.
 
 One revision round is included. Anything beyond that we scope and quote separately.

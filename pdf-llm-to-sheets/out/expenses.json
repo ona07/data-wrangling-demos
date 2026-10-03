@@ -1,0 +1,156 @@
+[
+ {
+  "file": "01-convenience-receipt.pdf",
+  "data": {
+   "doc_type": "receipt",
+   "issuer": "ファミリーストア 函館五稜郭店",
+   "date": "2026-09-28",
+   "currency": "JPY",
+   "registration_no": "T1234567890123",
+   "subtotal": 4218,
+   "tax": 422,
+   "total": 4640,
+   "items": [
+    {
+     "description": "コピー用紙A4 500枚",
+     "qty": 3,
+     "unit_price": 580,
+     "amount": null
+    },
+    {
+     "description": "乾電池 単3 8本パック",
+     "qty": 1,
+     "unit_price": 698,
+     "amount": null
+    },
+    {
+     "description": "ボールペン 黒 10本",
+     "qty": 2,
+     "unit_price": 450,
+     "amount": null
+    },
+    {
+     "description": "インスタントコーヒー",
+     "qty": 1,
+     "unit_price": 880,
+     "amount": null
+    }
+   ],
+   "notes": "レシートNo. 0431-02。現金 5,000 円でお釣り 360 円。行ごとの金額は印字されていない。"
+  },
+  "problems": []
+ },
+ {
+  "file": "02-expense-form.pdf",
+  "data": {
+   "doc_type": "expense_report",
+   "issuer": "小久保 直人",
+   "date": "2026-10-02",
+   "currency": "JPY",
+   "registration_no": null,
+   "subtotal": null,
+   "tax": null,
+   "total": 30570,
+   "items": [
+    {
+     "description": "函館→札幌 特急往復(研究打合せ)",
+     "qty": null,
+     "unit_price": null,
+     "amount": 11240
+    },
+    {
+     "description": "宿泊費 1泊(札幌)",
+     "qty": null,
+     "unit_price": null,
+     "amount": 8600
+    },
+    {
+     "description": "部品代 立替(マイクロポンプ継手)",
+     "qty": null,
+     "unit_price": null,
+     "amount": 4730
+    },
+    {
+     "description": "学会参加費",
+     "qty": null,
+     "unit_price": null,
+     "amount": 6000
+    }
+   ],
+   "notes": "立替精算書のため支払先は立替者本人。対象期間 2026-09-01〜2026-09-30。消費税は内税で、税額の内訳は書かれていない。承認欄は未記入。"
+  },
+  "problems": []
+ },
+ {
+  "file": "03-invoice-en.pdf",
+  "data": {
+   "doc_type": "invoice",
+   "issuer": "Northline Instruments Ltd.",
+   "date": "2026-10-01",
+   "currency": "USD",
+   "registration_no": "GB123456789",
+   "subtotal": 1261.0,
+   "tax": 0.0,
+   "total": 1261.0,
+   "items": [
+    {
+     "description": "Piezo transducer PZT-8, 2.0 MHz",
+     "qty": 4,
+     "unit_price": 185.0,
+     "amount": 740.0
+    },
+    {
+     "description": "Acrylic microfluidic chip, custom",
+     "qty": 10,
+     "unit_price": 42.5,
+     "amount": 425.0
+    },
+    {
+     "description": "Shipping (DHL Express)",
+     "qty": 1,
+     "unit_price": 96.0,
+     "amount": 96.0
+    }
+   ],
+   "notes": "Invoice No. NL-2026-4417. Due 2026-10-31 (net 30). VAT zero-rated as goods are exported outside the UK."
+  },
+  "problems": []
+ },
+ {
+  "file": "04-invoice-wrong-subtotal.pdf",
+  "data": {
+   "doc_type": "invoice",
+   "issuer": "大沼精密加工 株式会社",
+   "date": "2026-09-30",
+   "currency": "JPY",
+   "registration_no": "T9876543210987",
+   "subtotal": 68900,
+   "tax": 6890,
+   "total": 75790,
+   "items": [
+    {
+     "description": "アクリル板 切削加工(図面A)",
+     "qty": 6,
+     "unit_price": 7800,
+     "amount": 46800
+    },
+    {
+     "description": "アルミ治具 製作",
+     "qty": 1,
+     "unit_price": 24500,
+     "amount": 24500
+    },
+    {
+     "description": "表面研磨 追加工",
+     "qty": 3,
+     "unit_price": 5200,
+     "amount": 15600
+    }
+   ],
+   "notes": "請求番号 2026-0931。お支払期限 2026-10-31。振込先 道南しんきん 本店 普通 1234567。"
+  },
+  "problems": [
+   "明細の合計 86,900 と小計 68,900 が違う"
+  ]
+ }
+]

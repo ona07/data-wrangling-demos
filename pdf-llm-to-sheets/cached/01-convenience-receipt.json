@@ -1,0 +1,17 @@
+{
+ "doc_type": "receipt",
+ "issuer": "ファミリーストア 函館五稜郭店",
+ "date": "2026-09-28",
+ "currency": "JPY",
+ "registration_no": "T1234567890123",
+ "subtotal": 4218,
+ "tax": 422,
+ "total": 4640,
+ "items": [
+  {"description": "コピー用紙A4 500枚", "qty": 3, "unit_price": 580, "amount": null},
+  {"description": "乾電池 単3 8本パック", "qty": 1, "unit_price": 698, "amount": null},
+  {"description": "ボールペン 黒 10本", "qty": 2, "unit_price": 450, "amount": null},
+  {"description": "インスタントコーヒー", "qty": 1, "unit_price": 880, "amount": null}
+ ],
+ "notes": "レシートNo. 0431-02。現金 5,000 円でお釣り 360 円。行ごとの金額は印字されていない。"
+}
